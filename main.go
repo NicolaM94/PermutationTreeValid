@@ -9,6 +9,7 @@ Algorithm to find the permutations of a given array by creating a tree from it.
 For each element of the array it creates the branch starting from that and reducing the array step by step.
 In the end, each branch is a different permutation.
 
+Works decently with an array max size of 10 elements.
 Still sucks anyway, if u're looking for efficiency look elsewhere
 */
 
@@ -66,7 +67,7 @@ func Permutator (array []int, collector *[]string) {
 }
 
 func main () {
-	array := []int{0,1,2,3,4,5,6,7,8,9,10}
+	array := []int{0,1,2,3,4,5,6, 7, 8, 9}
 	collector := []string{}
 	Permutator(array, &collector)
 	fmt.Println(collector)
